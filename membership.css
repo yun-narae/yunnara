@@ -314,9 +314,9 @@ input:hover {
 /* start */
 
 .content {
-  padding-top: 120px;
+  padding-top: 60px;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 120px auto;
 }
 
 .content > div {
@@ -469,10 +469,6 @@ input:hover {
   margin-bottom: 0;
 }
 
-.ofusebody {
-  
-}
-
 .ofusebody .ofuse {
   position: fixed;
   top: 0;
@@ -530,12 +526,16 @@ input:hover {
   cursor: pointer;
 }
 
+.ofusebody .finalbtn {
+  margin-top: 40px;
+}
+
 .joinwrapper > div {
   margin-bottom: 40px;
 }
 
-.joinwrapper {
-  margin-bottom: 120px;
+.joinwrapper > div:last-child {
+  margin-bottom: 0px;
 }
 
 .joinbody .joininn {
@@ -558,7 +558,6 @@ input:hover {
 .joinbody .inn:last-child {
   margin-bottom: 0px;
 }
-
 
 .joinbody .inn .name {
   margin-bottom: 10px;
@@ -613,6 +612,45 @@ input:hover {
   text-decoration: underline;
 }
 
+.join_finish_body {
+  background: #f8f8f8;
+}
+
+.join_finish_body .img_box img {
+  width: 50px;
+  margin-top: 24px;
+}
+
+.join_finish_body .title {
+  /* text-align: center; */
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #616161;
+}
+
+.join_finish_body .title span {
+  font-weight: 700;
+}
+
+.join_finish_body .title2 {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  margin-bottom: 30px;
+}
+
+.join_finish_body .title2 span {
+  font-weight: 700;
+}
+
+.join_finish_body .btnbody {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.join_finish_body .btnbody button {
+  cursor: pointer;
+}
 
 @media screen and (min-width: 1366px) {
   .pc-none {
@@ -648,7 +686,7 @@ input:hover {
   }
 
   .content {
-    padding-top: 200px;
+    padding-top: 140px;
   }
 
   .tab {
@@ -751,6 +789,7 @@ input:hover {
     display: block;
     background: none;
     position: unset;
+    margin-bottom: 30px;
   }
 
   .ofusebody .ofuse .ofuseinn {
@@ -765,6 +804,41 @@ input:hover {
   .ofusebody .ofuse .ofuseinn ul {
     height: 240px;
     overflow: scroll;
+  }
+
+  .join_finish_body {
+    border-radius: 14px;
+    background: none;
+  }
+
+  .join_finish_body .t-form {
+    margin-bottom: 80px;
+  }
+
+  .join_finish_body .title {
+    /* text-align: center; */
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+  
+  .join_finish_body .title span {
+    font-weight: 700;
+  }
+  
+  .join_finish_body .title2 {
+    font-size: 2.6rem;
+    line-height: 3.6rem;
+    margin-bottom: 48px;
+  }
+  
+  .join_finish_body .title2 span {
+    font-weight: 700;
+  }
+  
+  .join_finish_body .btnbody {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
   }
 
 }

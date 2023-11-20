@@ -20,18 +20,18 @@ function includeHTML() {
             // 전기수는 여기에 왜 네비오븐을 넣지??
             //-------------------------------------
             // fooer
-          // dropdown        
+          // dropdown
           const optionMenu = document.querySelector(".ffdropdown"),
-          selectBtn = optionMenu.querySelector(".select_btn"),
-          options = optionMenu.querySelectorAll(".option"),
-          title = optionMenu.querySelector(".title");
-          selectBtn.addEventListener("click", () => optionMenu.classList.toggle("active"));
-          options.forEach(option => {
-          option.addEventListener("click", () => {
-              let selectedOption = option.querySelector(".option_text").innerText;
-              title.innerText = selectedOption;
-              optionMenu.classList.remove("active");
-          })
+            selectBtn = optionMenu.querySelector(".select_btn"),
+            options = optionMenu.querySelectorAll(".foption"),
+            title = optionMenu.querySelector(".setitle");
+            selectBtn.addEventListener("click", () => optionMenu.classList.toggle("active"));
+            options.forEach(option => {
+            option.addEventListener("click", () => {
+                let selectedOption = option.querySelector(".option_text").innerText;
+                title.innerText = selectedOption;
+                optionMenu.classList.remove("active");
+            })
         });
 
         // option select 중복가능
@@ -128,24 +128,24 @@ function includeHTML() {
   
   
             // reveal
-            function reveal() {
-                var reveals = document.querySelectorAll(".reveal");
+            // function reveal() {
+            //     var reveals = document.querySelectorAll(".reveal");
             
-                for (var i = 0; i < reveals.length; i++) {
-                var windowHeight = window.innerHeight;
-                var elementTop = reveals[i].getBoundingClientRect().top;
-                var elementVisible = 150;
+            //     for (var i = 0; i < reveals.length; i++) {
+            //     var windowHeight = window.innerHeight;
+            //     var elementTop = reveals[i].getBoundingClientRect().top;
+            //     var elementVisible = 150;
             
-                if (elementTop < windowHeight - elementVisible) {
-                    reveals[i].classList.add("active");
-                } else {
-                    reveals[i].classList.remove("active");
-                }
-                }
-            }
-            window.addEventListener("scroll", reveal);
-            // To check the scroll position on page load
-            reveal();
+            //     if (elementTop < windowHeight - elementVisible) {
+            //         reveals[i].classList.add("active");
+            //     } else {
+            //         reveals[i].classList.remove("active");
+            //     }
+            //     }
+            // }
+            // window.addEventListener("scroll", reveal);
+            // // To check the scroll position on page load
+            // reveal();
   
   
             // seawrapper 최근 검색어 슬라이드

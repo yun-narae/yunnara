@@ -346,12 +346,17 @@ main .search_content .list03 .num {
   padding: 10px 0px;
   border-bottom: 1px solid #dcdcdc;
   cursor: pointer;
-}   #nav_content .nav_sub section ul li:hover {
+} #nav_content .nav_sub section ul li:hover {
   border-bottom: 1px solid #ababab;
 }
 
-#nav_content .nav_sub section ul li a{
+#nav_content .nav_sub section ul li:hover a {
+  color: #121212;
+}
+
+#nav_content .nav_sub section ul li a {
   font-weight: 600;
+  color: #757575;
 }
 
 #nav_content .nav_sub li {
@@ -621,6 +626,15 @@ main .search_content .list03 .num {
     font-size: 1.4rem;
     line-height: 2rem;
   }
+
+  
+#nav_content .nav_sub section ul li {
+  padding: 20px 0px;
+  border-bottom: 0px;
+  margin-right: 20px;
+}   #nav_content .nav_sub section ul li:hover {
+  border-bottom: 0px;
+}
 
   #nav_content .inner .navconbtn {
     display: none;

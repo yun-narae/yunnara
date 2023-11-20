@@ -299,7 +299,7 @@
 
   /*  */
 
-  .reveal {
+  /* .reveal {
     position: relative;
     transform: translateY(100px);
     opacity: 0;
@@ -308,7 +308,7 @@
   .reveal.active {
     transform: translateY(0);
     opacity: 1;
-  }
+  } */
 
   .iconA {
     /* 아이콘 관련 CSS a 태그에 class: iconA */
@@ -1627,7 +1627,7 @@
     }
     
     #estimate .pst .p2 p {
-      font-size: 1rem;
+      font-size: 1.1rem;
       line-height: 1.4rem;
     }
 
@@ -1654,22 +1654,17 @@
       font-size: 1.2rem;
     }
 
-    #estimate .inn .btn-box {
+    #estimate .inn01-box .tt {
+    }
 
+    #estimate .inn .tt {
+      font-size: 1.2rem;
+      margin-bottom: 14px;
     }
 
     #estimate .inn .btn-box button {
       font-size: 1rem;
       padding: 16px 30px;
-
-    }
-
-    #estimate .inn .btn-box .btn1 {
-
-    }
-
-    #estimate .inn .btn-box .btn2 {
-
     }
 
     #newKia {
